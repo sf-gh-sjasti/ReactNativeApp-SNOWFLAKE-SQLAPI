@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FlatList, Text, View } from 'react-native';
 import { ListItem } from "react-native-elements";
-import bearerToken from "./Tokens";
+import bearerToken from "./Token";
 
 export default function Display() {
   const [isLoading, setLoading] = useState(true);
