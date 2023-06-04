@@ -36,5 +36,5 @@ To run the app locally,
 1. Clone the repo using ``` git clone https://github.com/sf-gh-sjasti/ReactNativeApp-Snowflake-SQLAPI.git reactNativeApp ```
 2. Navigate to the folder, ``` cd reactNativeApp ```
 3. Run ``` npm install ``` to install dependancies
-4. Run ``` npm expo start ``` and hit ``` w ``` key to run the app in a web browser
+4. Run ``` npx expo start ``` and hit ``` w ``` key to run the app in a web browser
 5. Launches the app in Web Browser.
