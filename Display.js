@@ -9,8 +9,14 @@ export default function Display() {
 
   const getDataFromSnowflake = async () => {
     try {
-      const date = new Date();
-      const response = await fetch('https://<SNOWFLAKE ACCOUNT>.snowflakecomputing.com/api/v2/statements', {
+      /**
+       * If you are located in us-west region, Update SNOWFLAKE_ACCOUNT_IDENTIFIER with your Snowflake Account 
+       * (or) If you are located outside the us-west region, Update SNOWFLAKE_ACCOUNT_IDENTIFIER as ‘.'. 
+       * To get the snowflake_account value from Snowflake, run SELECT CURRENT_ACCOUNT() in Snowsight. 
+       * To get the region value from Snowflake, run SELECT CURRENT_REGION() in Snowsight. 
+       * SNOWFLAKE_ACCOUNT_IDENTIFIER and SNOWFLAKE_ACCOUNT would be same for us-west.
+       */
+      const response = await fetch('https://<SNOWFLAKE ACCOUNT IDENTIFIER>.snowflakecomputing.com/api/v2/statements', {
         method: 'POST',
         headers: {
         Accept: 'application/json',
